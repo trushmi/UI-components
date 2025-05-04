@@ -1,0 +1,75 @@
+/* Banner.module.css */
+:root {
+  --color-green: green;
+  --color-blue: blue;
+  --color-red: red;
+  --color-purple: purple;
+  --color-white: white;
+}
+
+.banner {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.sm {
+  height: 50px;
+}
+
+.md {
+  height: 100px;
+}
+
+.lg {
+  height: 150px;
+}
+
+.green {
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
+.blue {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.red {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+.purple {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+
+.hidden {
+  display: none;
+}

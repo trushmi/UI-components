@@ -1,0 +1,23 @@
+:root {
+  --main-color: rgba(172, 58, 58, 1);
+}
+.notFoundPageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.errorCode {
+  font-size: 10em;
+  color: var(--main-color);
+  margin: 0 auto;
+}
+.errorMsg {
+  font-size: 1em;
+  margin-top: 40px;
+}
+.homePageLink {
+  display: block;
+  margin-top: 20px;
+  color: var(--main-color);
+}
