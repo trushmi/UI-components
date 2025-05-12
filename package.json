@@ -1,5 +1,5 @@
 {
-  "name": "trushmi-ui-components-library",
+  "name": "@trushmi/ui-components",
   "description": "A set of practical and customizable React components, leveraging the static typing of TypeScript for robust and predictable UI development",
   "keywords": [
     "react",
@@ -8,7 +8,7 @@
     "vite",
     "typescript"
   ],
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "Iryna Trush",
   "license": "MIT",
   "private": false,
@@ -25,6 +25,9 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   },
   "prepublishOnly": "npm run build",
   "sideEffects": [
