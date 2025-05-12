@@ -54,3 +54,5 @@ export function TextArea({
     </div>
   );
 }
+
+TextArea.displayName = "TextArea";

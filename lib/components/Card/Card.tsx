@@ -10,13 +10,13 @@ export function Card({
   externalLink,
 }: CardProps): ReactElement {
   return (
-    <div className={styles.cardContainer}>
+    <div className={styles.container}>
       <a
         href={externalLink}
         target="_blank"
         rel="noopener noreferrer"
         aria-label={`Read more about ${cardTitle}`}
-        className={styles.cardLink}
+        className={styles.link}
       >
         <div className={styles.imageContainer}>
           <img
@@ -32,9 +32,9 @@ export function Card({
             />
           )}
         </div>
-        <div className={styles.cardInfoContainer}>
-          <div className={styles.cardTitle}>{cardTitle}</div>
-          <div className={styles.cardDescription}>{cardDescription}</div>
+        <div className={styles.infoContainer}>
+          <div className={styles.title}>{cardTitle}</div>
+          <div className={styles.description}>{cardDescription}</div>
         </div>
       </a>
     </div>

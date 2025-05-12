@@ -1,4 +1,8 @@
-import { FlashCardData } from "../types";
+export interface FlashCardData {
+  id: string;
+  front: string;
+  back: string;
+}
 
 export const flashCardsData: FlashCardData[] = [
   {

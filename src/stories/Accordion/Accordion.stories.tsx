@@ -1,6 +1,9 @@
-import { AccordionItem } from "../";
+import type { Meta, StoryObj } from "@storybook/react";
 
-export const accordionMockData: AccordionItem[] = [
+import { Accordion } from "../../../dist/components";
+import { AccordionItem } from "../../../dist/components";
+
+const accordionMockData: AccordionItem[] = [
   {
     id: 1,
     title: "What is TypeScript?",
@@ -49,16 +52,49 @@ export const accordionMockData: AccordionItem[] = [
     content:
       "Type aliases create a new name for an existing type. This improves code readability and maintainability by making complex types more concise and easier to understand. For example: `type UserID = string;`.",
   },
-  {
-    id: 9,
-    title: "What are decorators in TypeScript?",
-    content:
-      "Decorators are a special kind of declaration that can be attached to classes, methods, properties, and parameters. They provide a way to modify or enhance the behavior of the decorated element, such as adding metadata, changing access control, or injecting dependencies.",
-  },
-  {
-    id: 10,
-    title: "How do I use external JavaScript libraries in TypeScript?",
-    content:
-      "To use external JavaScript libraries in TypeScript, install type definitions for them. These type definitions provide the necessary type information for the library, allowing TypeScript to correctly type-check its usage. Type definitions are typically found on DefinitelyTyped and installed via npm with the `@types` scope, for example: `npm install @types/jquery`.",
-  },
 ];
+
+const meta = {
+  title: "Example/Accordion",
+  component: Accordion,
+  parameters: {
+    layout: "centered",
+  },
+  tags: ["autodocs"],
+  argTypes: {
+    accordionTitle: {
+      description: "The main title for the accordion component.",
+      control: "text",
+    },
+    accordionData: {
+      description: "An array of objects, each representing an accordion item.",
+      control: "object",
+    },
+  },
+  args: {
+    accordionTitle: "TypeScript FAQs",
+    accordionData: accordionMockData,
+  },
+} satisfies Meta<typeof Accordion>;
+
+export default meta;
+
+export const Basic: StoryObj<typeof meta> = {};
+
+export const CustomTitle: StoryObj<typeof meta> = {
+  args: {
+    accordionTitle: "More TypeScript Information",
+  },
+};
+
+export const FewerItems: StoryObj<typeof meta> = {
+  args: {
+    accordionData: accordionMockData.slice(0, 3),
+  },
+};
+
+export const NoTitle: StoryObj<typeof meta> = {
+  args: {
+    accordionTitle: undefined,
+  },
+};
