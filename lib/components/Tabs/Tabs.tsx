@@ -37,3 +37,4 @@ export function Tabs({ tabConfig }: TabsProps): ReactElement {
     </>
   );
 }
+Tabs.displayName = "Tabs";

@@ -6,6 +6,24 @@ import { FlashCardData } from "./flashcardsData";
 const meta = {
   title: "Example/FlashCards",
   component: FlashCards,
+  decorators: [
+    (Story) => (
+      <div
+        style={{
+          backgroundColor: "#f0f0f0",
+          margin: "0 auto",
+          display: "flex",
+          flexWrap: "wrap",
+          alignItems: "center",
+          justifyContent: "center",
+          minHeight: "50vh",
+          width: "100vh",
+        }}
+      >
+        <Story />
+      </div>
+    ),
+  ],
   parameters: {
     layout: "centered",
   },

@@ -23,3 +23,4 @@ export default function PageNotFound({
     </div>
   );
 }
+PageNotFound.displayName = "PageNotFound";

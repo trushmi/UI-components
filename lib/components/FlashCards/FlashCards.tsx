@@ -58,3 +58,4 @@ export function FlashCards({ flashCardsData }: FlashCardsProps): ReactElement {
     </div>
   );
 }
+FlashCards.displayName = "FlashCards";

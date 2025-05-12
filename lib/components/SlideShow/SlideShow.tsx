@@ -66,3 +66,4 @@ export function SlideShow({
     </div>
   );
 }
+SlideShow.displayName = "SlideShow";

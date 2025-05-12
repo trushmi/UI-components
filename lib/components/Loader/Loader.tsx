@@ -10,3 +10,4 @@ export function Loader({ type, text }: LoaderProps): ReactElement {
     </div>
   );
 }
+Loader.displayName = "Loader";

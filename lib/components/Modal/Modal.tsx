@@ -19,3 +19,4 @@ export function Modal({ onCloseModal, children }: ModalProps): ReactElement {
     </div>
   );
 }
+Modal.displayName = "Modal";

@@ -1,7 +1,17 @@
 {
-  "name": "ui-components",
-  "private": true,
+  "name": "trushmi-ui-components-library",
+  "description": "A set of practical and customizable React components, leveraging the static typing of TypeScript for robust and predictable UI development",
+  "keywords": [
+    "react",
+    "components",
+    "ui-library",
+    "vite",
+    "typescript"
+  ],
   "version": "0.0.0",
+  "author": "Iryna Trush",
+  "license": "MIT",
+  "private": false,
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
