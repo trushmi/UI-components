@@ -8,7 +8,7 @@
     "vite",
     "typescript"
   ],
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Iryna Trush",
   "license": "MIT",
   "private": false,
@@ -27,7 +27,8 @@
     "build-storybook": "storybook build"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "name": "@trushmi/ui-components",
+    "registry": "https://npm.pkg.github.com/trushmi"
   },
   "prepublishOnly": "npm run build",
   "sideEffects": [
