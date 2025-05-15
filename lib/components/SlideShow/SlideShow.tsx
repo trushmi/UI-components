@@ -1,7 +1,7 @@
 import { ReactElement, useState, useEffect } from "react";
 import { SlideShowProps } from "./types";
 
-import styles from "./slideShow.module.css";
+import styles from "./SlideShow.module.css";
 
 export function SlideShow({
   images,
